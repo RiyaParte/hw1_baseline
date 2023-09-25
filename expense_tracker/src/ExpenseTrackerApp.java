@@ -32,8 +32,9 @@ public class ExpenseTrackerApp {
         // Input Validation
         InputValidation obj = new InputValidation();
         
-        Boolean isAmountValid = obj.validateAmount(view.getAmountField());
-        Boolean isCategoryValid = obj.validateCategory(view.getCategoryField());
+        boolean isAmountValid = obj.validateAmount(amount);
+        boolean isCategoryValid = obj.validateCategory(category);
+        String message = "";
 
         if (isAmountValid && isCategoryValid) {
           
@@ -43,22 +44,22 @@ public class ExpenseTrackerApp {
           // Call controller to add transaction
           view.addTransaction(t);
         }
-        else if (isAmountValid && !isCategoryValid){
-          //category is invalid
-          view.showError(!isAmountValid, !isCategoryValid);
-        }
-        else if (!isAmountValid && isCategoryValid){
-          //amount is invalid
-          view.showError(!isAmountValid, !isCategoryValid);
-        }
         else{
-          //both are invalid
-          view.showError(!isAmountValid, !isCategoryValid);
+          if (!isAmountValid){
+          //amount is invalid
+          message += "Please input an valid amount within the range 1 to 999.";
+          }
+          if (!isCategoryValid) {
+            //category is invalid
+            message += " Please input a valid category of types: Food, Travel, Bills, Entertainment, Other.";
+          }
+          view.showError(message);
         }
+
 
       }
       catch(NumberFormatException numberFormatException){
-        view.throwValidAmountError();
+       view.showError("Please input an valid amount within the range 1 to 999");
       }
     });
 
