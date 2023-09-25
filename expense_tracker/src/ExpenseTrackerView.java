@@ -133,4 +133,35 @@ public class ExpenseTrackerView extends JFrame {
 
 
   // Other view methods
+  public void showError(boolean amount, boolean category){
+    if(amount && category){
+      //both are invalid
+      throwValidAmountAndCategoryError();
+      
+    }
+    else if (amount && !category){
+      //amount is invalid
+      throwValidAmountError();
+    }
+    else if (!amount && category){
+      //category is invalid
+      throwValidCategoryError();
+    }
+
+  }
+
+  public void throwValidAmountError(){
+    JOptionPane.showMessageDialog(new JFrame(), "Please input an valid amount within the range 1 to 999",
+               "Warning", JOptionPane.ERROR_MESSAGE);
+  }
+
+  public void throwValidCategoryError(){
+    JOptionPane.showMessageDialog(new JFrame(), "Please input a valid category of types: Food, Travel, Bills, Entertainment, Other",
+               "Warning", JOptionPane.ERROR_MESSAGE);
+  }
+
+  public void throwValidAmountAndCategoryError(){
+    JOptionPane.showMessageDialog(new JFrame(), "Please input an amount within the range 1 to 999 and a valid category of types: Food, Travel, Bills, Entertainment, Other",
+               "Warning", JOptionPane.ERROR_MESSAGE);
+  }
 }
