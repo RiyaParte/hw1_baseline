@@ -25,14 +25,41 @@ public class ExpenseTrackerApp {
     view.getAddTransactionBtn().addActionListener(e -> {
       
       // Get transaction data from view
-      double amount = view.getAmountField(); 
-      String category = view.getCategoryField();
+      try{
+        double amount = view.getAmountField(); 
+        String category = view.getCategoryField();
 
-      // Create transaction object
-      Transaction t = new Transaction(amount, category);
+        // Input Validation
+        InputValidation obj = new InputValidation();
+        
+        Boolean isAmountValid = obj.validateAmount(view.getAmountField());
+        Boolean isCategoryValid = obj.validateCategory(view.getCategoryField());
 
-      // Call controller to add transaction
-      view.addTransaction(t);
+        if (isAmountValid && isCategoryValid) {
+          
+          // Create transaction object
+          Transaction t = new Transaction(amount, category);
+
+          // Call controller to add transaction
+          view.addTransaction(t);
+        }
+        else if (isAmountValid && !isCategoryValid){
+          //category is invalid
+          view.showError(!isAmountValid, !isCategoryValid);
+        }
+        else if (!isAmountValid && isCategoryValid){
+          //amount is invalid
+          view.showError(!isAmountValid, !isCategoryValid);
+        }
+        else{
+          //both are invalid
+          view.showError(!isAmountValid, !isCategoryValid);
+        }
+
+      }
+      catch(NumberFormatException numberFormatException){
+        view.throwValidAmountError();
+      }
     });
 
   }
