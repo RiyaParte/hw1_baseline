@@ -1,8 +1,41 @@
+commit 17f56891927ba203b212c20022051571b4b745c9
+Merge: 9733dea 56f1d91
+Author: RiyaParte <parteriya21@gmail.com>
+Date:   Tue Sep 26 18:00:08 2023 -0400
+
+    Merge pull request #3 from RiyaParte/dev2
+    
+    added java doc
+
+commit 56f1d9120cae8c5a21d0006e8e18450bc876f5b5
+Author: mitalee18 <mitaleeminde@gmail.com>
+Date:   Tue Sep 26 17:57:33 2023 -0400
+
+    added java doc
+
+commit 9733dea28a73bb43cf4e3fd1360f788e5483a295
+Merge: d25cf4e e6da06c
+Author: RiyaParte <parteriya21@gmail.com>
+Date:   Tue Sep 26 17:20:31 2023 -0400
+
+    Merge pull request #2 from RiyaParte/dev2
+    
+    Commit 2: Simplified the code
+
 commit e6da06c6549976fad0cf9751333b82b5015f0ba9
 Author: mitalee18 <mitaleeminde@gmail.com>
 Date:   Mon Sep 25 10:50:14 2023 -0400
 
     Commit 2: Simplified the code
+
+commit d25cf4e9c448601a6b8925741359820e556bfa01
+Merge: 4aba3f3 eef4954
+Author: RiyaParte <parteriya21@gmail.com>
+Date:   Sun Sep 24 22:27:43 2023 -0400
+
+    Merge pull request #1 from RiyaParte/dev1
+    
+    Commit 1: handled invalid input errors
 
 commit eef4954dfce2cf25fc15ea5beabe03155ab01af4
 Author: mitalee18 <mitaleeminde@gmail.com>
