@@ -1,0 +1,54 @@
+commit e6da06c6549976fad0cf9751333b82b5015f0ba9
+Author: mitalee18 <mitaleeminde@gmail.com>
+Date:   Mon Sep 25 10:50:14 2023 -0400
+
+    Commit 2: Simplified the code
+
+commit eef4954dfce2cf25fc15ea5beabe03155ab01af4
+Author: mitalee18 <mitaleeminde@gmail.com>
+Date:   Sun Sep 24 22:22:27 2023 -0400
+
+    Commit 1: handled invalid input errors
+
+commit 4aba3f306ce156c0a3995c72fae604e5c4dd4839
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Thu Sep 21 16:16:51 2023 -0400
+
+    Readme Update
+
+commit e6b5eef3e2cf2bd38bd2482b633c8f670c56b3b9
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:34:40 2023 -0400
+
+    Readme Update
+
+commit 8c41e8002d1ab37af47d259a2dd7f02033c69d72
+Merge: d3a5c14 34bd5aa
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:32:44 2023 -0400
+
+    Merge branch 'main' of https://github.com/CS520-Fall2023/hw1_baseline
+
+commit d3a5c14b35628fc5ad47068443af4e5960043c39
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:31:49 2023 -0400
+
+    Readme Update
+
+commit 34bd5aa0313f8c07c903f01e68ae0489f89e3d87
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 10:44:46 2023 -0400
+
+    Readme Update
+
+commit 72141cc496980da67e34cc8676331c48e912ec41
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 02:14:52 2023 -0400
+
+    HW1 file updates
+
+commit ed592ee28b697f1c2464703f0b53618bb653c017
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 02:13:24 2023 -0400
+
+    Initial commit
