@@ -25,8 +25,15 @@ public class ExpenseTrackerApp {
     view.getAddTransactionBtn().addActionListener(e -> {
       
       // Get transaction data from view
+      double amount=0;
+
+      //first we catch amount error
       try{
-        double amount = view.getAmountField(); 
+          amount = view.getAmountField();
+      }
+      catch(NumberFormatException numberFormatException){
+        view.showError("Please input an valid amount within the range 1 to 999");
+      }
         String category = view.getCategoryField();
 
         // Input Validation
@@ -55,12 +62,6 @@ public class ExpenseTrackerApp {
           }
           view.showError(message);
         }
-
-
-      }
-      catch(NumberFormatException numberFormatException){
-       view.showError("Please input an valid amount within the range 1 to 999");
-      }
     });
 
   }
