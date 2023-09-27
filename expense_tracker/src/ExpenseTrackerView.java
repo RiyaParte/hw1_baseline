@@ -133,6 +133,11 @@ public class ExpenseTrackerView extends JFrame {
 
 
   // Other view methods
+
+  /**
+   * To handle error message by giving a pop-up window
+   * @param errorMessage: a string which is added to the window pop up while showing error
+   */
   public void showError(String errorMessage){
     JOptionPane.showMessageDialog(new JFrame(), errorMessage,
             "Warning", JOptionPane.ERROR_MESSAGE);
